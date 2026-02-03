@@ -80,6 +80,23 @@ p{
   line-height:1.6;
 }
 
+/* SOCIAL BUTTONS */
+.social{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px;
+  margin:15px 0;
+}
+.social a{
+  padding:10px 15px;
+  border-radius:8px;
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  background:linear-gradient(45deg,#ff00cc,#00ffff);
+}
+
 /* FORM */
 form{
   max-width:400px;
@@ -144,16 +161,24 @@ button:hover{
 
 <p>
 If you have any questions, suggestions, or copyright issues,  
-you can contact us using the form below.  
+you can contact us using the options below.  
 We usually reply within 24–48 hours.
 </p>
 
-<form>
-  <input type="text" placeholder="Your Name" required>
-  <input type="email" placeholder="Your Email" required>
-  <input type="text" placeholder="Subject">
-  <textarea rows="5" placeholder="Your Message"></textarea>
-  <button type="submit">Submit</button>
+<div class="social">
+  <a href="mailto:animeshreet@yahoo.com">Email</a>
+  <a href="https://t.me/+ZicfPST7Z0AyN2E1" target="_blank">Telegram</a>
+  <a href="https://whatsapp.com/channel/0029VbBuUn8JuyA9gx2WVW1q target="_blank">WhatsApp</a>
+  <a href="https://www.instagram.com/animeshreet?igsh=MW5oM3A3emZlYnAwdA==" target="_blank">Instagram</a>
+  <a href="https://discord.gg/9zrAmbeqG" target="_blank">Discord</a>
+</div>
+
+<form action="mailto:animeshreet@yahoo.com" method="post" enctype="text/plain">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <input type="text" name="subject" placeholder="Subject">
+  <textarea rows="5" name="message" placeholder="Your Message"></textarea>
+  <button type="submit">Send</button>
 </form>
 
 </div>
